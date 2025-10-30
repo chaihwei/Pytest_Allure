@@ -1,0 +1,12 @@
+- case_name: 正确登录
+  url: /post
+  data:
+    username: "user1"
+    password: "123456"
+  expected_status: 200
+- case_name: 错误登录
+  url: /post
+  data:
+    username: "user1"
+    password: "wrong"
+  expected_status: 200 
